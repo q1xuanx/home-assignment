@@ -10,4 +10,4 @@ if [ ! -f target/homework-assignment.jar ]; then
 fi
 
 echo "Running: java -jar target/homework-assignment.jar --hotel_id '$hotel_ids' --destination_id '$destination_ids'"
-java -jar target/homework-assignment.jar --hotel_id "$hotel_ids" --destination_id "$destination_ids"
+java -jar target/homework-assignment.jar my_hotel_merger "$1" "$2"
