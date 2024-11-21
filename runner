@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+hotel_ids=$1
+destination_ids=$2
+
+if [ ! -f target/homework-assignment.jar ]; then
+  echo "Error: JAR file not found in target/homework-assignment.jar. Please build the project first."
+  exit 1
+fi
+
+echo "Running: java -jar target/homework-assignment.jar --hotel_id '$hotel_ids' --destination_id '$destination_ids'"
+java -jar target/homework-assignment.jar --hotel_id "$hotel_ids" --destination_id "$destination_ids"
